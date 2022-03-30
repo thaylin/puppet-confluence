@@ -112,7 +112,7 @@ class confluence (
   contain confluence::facts
   contain confluence::install
   contain confluence::config
-  contain confluence::service
+ # contain confluence::service
 
   Class['confluence::facts'] -> Class['confluence::install'] -> Class['confluence::config'] ~> Class['confluence::service']
 
